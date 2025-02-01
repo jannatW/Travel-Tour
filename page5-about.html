@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Page</title>
+  <style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        background-color: #005f73;
+        color: white;
+        padding: 10px 20px;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin: 0;
+        align-self: flex-start; /* Ensures the logo aligns to the left */
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .menu {
+        margin-left: auto;
+    }
+
+    .menu ul {
+        list-style: none;
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu ul li {
+        margin: 0 15px;
+    }
+
+    .menu ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2em;
+    }
+
+    .menu ul li a:hover,
+    .menu ul li a.active {
+        background-color: #0a9396;
+        padding: 5px 15px;
+        border-radius: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        margin: 20px 0;
+        color: rgb(9, 9, 9);
+    }
+
+    /* Centering container */
+    .about-container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        position: relative;
+        color: rgb(17, 16, 16);
+    }
+
+    /* Blurred background image */
+    .about-container::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('images/img5.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        filter: blur(5px);
+        z-index: 1;
+    }
+
+    /* Add a dark overlay on the background */
+    .about-container::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.6);
+        z-index: 2;
+    }
+
+    .about-container p,
+    .about-container h1,
+    .about-container section {
+        position: relative;
+        z-index: 3;
+    }
+
+    .about-container p {
+        font-size: 1.2em;
+        line-height: 1.6;
+        max-width: 800px;
+        color: black;
+    }
+
+    footer {
+        background-color: #005f73;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: relative;
+        width: 100%;
+    }
+    
+    footer p {
+        margin: 0;
+    }
+  </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">Travel & Tour</div>
+            <div class="menu">
+                <ul>
+                    <li><a  href="page1-home.html">Home</a></li>
+                    <li><a  href="page2-destinations.html">Destinations</a></li>
+                    <li><a href="page3-traveltips.html">Travel Tips</a></li>
+                    <li><a href="page4-contact.html">Contact Us</a></li>
+                    <li><a class="active" href="page5-about.html">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Centered Image and Text -->
+    <div class="about-container">
+        <h1>About Us</h1>
+        <section class="about-section">
+            <p><i>Welcome to Explore the World, your gateway to discovering the most exciting travel destinations across the globe. Our site is designed to inspire wanderlust and help travelers experience the unique charm, culture, and attractions of cities from every corner of the world</i>.</p>
+            <p><i>Whether you're drawn to the vibrant streets of New York, the historic charm of Rome, or the serene beaches of Bali, we offer comprehensive guides to help you navigate your journey. Our goal is to bring the spirit of each city to life, highlighting its landmarks, local culture, and hidden gems. With detailed itineraries, practical tips, and personalized recommendations, we make exploring the world easy and fun.</i></p>
+            <p><i>At Explore the World, we believe that travel should be more than just visiting places – it should be about connecting with the essence of a destination. Join us in discovering the unique vibe and unforgettable experiences that each city has to offer</i>.</p>
+          </section>
+    </div>
+        
+    <footer>
+        <p>© 2024 Tech Brains Ltd. STU175852</p>
+    </footer>
+</body>
+</html>

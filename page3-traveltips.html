@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Tips</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Add the styles for the gallery here */
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">Travel & Tour</div>
+            <div class="menu">
+                <ul>
+                    <li><a href="page1-home.html">Home</a></li>
+                    <li><a href="page2-destinations.html">Destinations</a></li>
+                    <li><a class="active" href="page3-traveltips.html">Travel Tips</a></li>
+                    <li><a href="page4-contact.html">Contact Us</a></li>
+                    <li><a href="page5-about.html">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Travel Tips Section -->
+    <section class="tips">
+        <h2>Travel Tips</h2>
+        <ul>
+            <li>Always pack a reusable water bottle to stay hydrated.</li>
+            <li>Keep your important documents safe with a travel wallet.</li>
+            <li>Plan your itinerary but leave room for spontaneous adventures.</li>
+            <li>Learn a few key phrases in the local language for smoother communication.</li>
+            <li>Don't forget travel insurance to cover unexpected situations.</li>
+        </ul>
+    </section>
+
+    <!-- Image Gallery Section -->
+    <section class="gallery">
+        <img src="images/img9.jpg" alt="Travel Image 6">
+        <img src="images/img7.jpg" alt="Travel Image 7">
+        <img src="images/img8.jpg" alt="Travel Image 8">
+        <img src="images/img6.jpg" alt="Travel Image 9">
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Tech Brains Ltd. STU175852</p>
+    </footer>
+</body>
+</html>
